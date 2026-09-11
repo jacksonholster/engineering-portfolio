@@ -1,0 +1,236 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Jackson Holster — Electrical Engineering portfolio featuring DigiCam, an ESP32-S3 digital camera designed with KiCad, Onshape, C/C++, and 3D printing.">
+  <meta name="theme-color" content="#0d1117">
+  <title>Jackson Holster | Electrical Engineering Portfolio</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="grain" aria-hidden="true"></div>
+
+  <header class="site-header">
+    <a class="brand" href="#top" aria-label="Jackson Holster home">
+      <span class="brand-mark">JH</span>
+      <span class="brand-name">Jackson Holster</span>
+    </a>
+
+    <button class="nav-toggle" aria-expanded="false" aria-controls="site-nav" aria-label="Toggle navigation">
+      <span></span><span></span>
+    </button>
+
+    <nav id="site-nav" class="site-nav">
+      <a href="#project">Project</a>
+      <a href="#electrical">Electrical</a>
+      <a href="#mechanical">CAD</a>
+      <a href="#build">Build</a>
+      <a href="#output">Output</a>
+      <a href="#about">About</a>
+    </nav>
+  </header>
+
+  <main id="top">
+    <section class="hero">
+      <div class="hero-copy">
+        <p class="kicker">ELECTRICAL ENGINEERING • EMBEDDED SYSTEMS • PCB DESIGN</p>
+        <h1>I build hardware<br>from <em>schematic</em> to prototype.</h1>
+        <p class="hero-lede">
+          I'm Jackson Holster, an Electrical Engineering student at California State University, Long Beach.
+          I enjoy embedded systems, circuit design, CAD, and hands-on electronics.
+        </p>
+        <div class="hero-actions">
+          <a class="button button-primary" href="#project">Explore DigiCam</a>
+          <a class="button button-ghost" href="mailto:jacksonholster1@gmail.com">Contact me</a>
+        </div>
+        <div class="hero-meta">
+          <span>CSULB • Electrical Engineering</span>
+          <span>Corona / Long Beach, CA</span>
+        </div>
+      </div>
+
+      <figure class="hero-media">
+        <img src="assets/images/digicam-final-rear-livefeed.jpg" alt="Finished DigiCam prototype with live camera feed shown on the rear display">
+        <figcaption>
+          <span>Featured project</span>
+          <strong>DigiCam — ESP32 Digital Camera</strong>
+        </figcaption>
+      </figure>
+    </section>
+
+    <section id="project" class="section project-intro">
+      <div class="section-label">
+        <span>01</span>
+        <p>Featured Project</p>
+      </div>
+
+      <div class="section-body">
+        <div class="project-title-row">
+          <div>
+            <p class="kicker">AUGUST 2026</p>
+            <h2>DigiCam</h2>
+            <p class="project-subtitle">A custom ESP32-S3 digital camera built from the electronics outward.</p>
+          </div>
+          <div class="status-pill"><span></span> Functional prototype</div>
+        </div>
+
+        <div class="project-overview-grid">
+          <div class="overview-copy">
+            <p>
+              DigiCam is a handheld digital camera centered around a Seeed Studio XIAO ESP32-S3 Sense.
+              The project combines embedded programming, electrical design, physical controls, a 2.4-inch SPI TFT,
+              battery power, custom flash circuitry, and a fully custom 3D-printed enclosure.
+            </p>
+            <p>
+              The project was an exercise in full-system integration: designing the electronics in KiCad,
+              creating the mechanical components in Onshape, assembling the prototype, and debugging the hardware
+              until a live camera feed and image capture were working on the finished device.
+            </p>
+          </div>
+
+          <div class="spec-list" aria-label="Project technologies">
+            <div><span>MCU</span><strong>XIAO ESP32-S3 Sense</strong></div>
+            <div><span>Display</span><strong>2.4&quot; SPI TFT</strong></div>
+            <div><span>Electrical</span><strong>KiCad</strong></div>
+            <div><span>Mechanical</span><strong>Onshape</strong></div>
+            <div><span>Firmware</span><strong>C / C++</strong></div>
+            <div><span>Fabrication</span><strong>FDM 3D Printing</strong></div>
+          </div>
+        </div>
+
+        <div class="feature-strip">
+          <div><small>01</small><strong>Live preview</strong><p>Camera output displayed in real time on the rear TFT.</p></div>
+          <div><small>02</small><strong>Physical controls</strong><p>Rotary encoder, shutter button, and dedicated control inputs.</p></div>
+          <div><small>03</small><strong>Custom hardware</strong><p>Multi-sheet schematics for power, display, controls, MCU, and flash.</p></div>
+          <div><small>04</small><strong>Custom enclosure</strong><p>CAD-designed body, grip features, openings, and control hardware.</p></div>
+        </div>
+      </div>
+    </section>
+
+    <section id="electrical" class="section section-dark">
+      <div class="section-label"><span>02</span><p>Electrical Design</p></div>
+      <div class="section-body">
+        <div class="section-heading">
+          <div><p class="kicker">KICAD</p><h2>Breaking the camera into subsystems.</h2></div>
+          <p>I organized the electrical design into functional blocks so the MCU, power system, display, controls, and flash circuitry could be developed and debugged independently.</p>
+        </div>
+
+        <button class="image-card schematic-hero lightbox-trigger" data-src="assets/images/kicad-full-schematic.png" data-caption="Complete DigiCam schematic in KiCad">
+          <img src="assets/images/kicad-full-schematic.png" alt="Complete DigiCam schematic shown in KiCad">
+          <span class="image-caption"><strong>Complete schematic</strong><small>Open full size ↗</small></span>
+        </button>
+
+        <div class="schematic-grid">
+          <button class="image-card lightbox-trigger" data-src="assets/images/kicad-esp32-pinmap.png" data-caption="ESP32-S3 pin mapping"><img src="assets/images/kicad-esp32-pinmap.png" alt="KiCad schematic showing ESP32-S3 pin mapping"><span class="image-caption"><strong>MCU pin mapping</strong><small>ESP32-S3</small></span></button>
+          <button class="image-card lightbox-trigger" data-src="assets/images/kicad-power.png" data-caption="Battery and power switching"><img src="assets/images/kicad-power.png" alt="KiCad battery and power schematic"><span class="image-caption"><strong>Power</strong><small>Battery + switch</small></span></button>
+          <button class="image-card lightbox-trigger" data-src="assets/images/kicad-display.png" data-caption="SPI TFT display interface"><img src="assets/images/kicad-display.png" alt="KiCad SPI TFT display interface schematic"><span class="image-caption"><strong>Display interface</strong><small>SPI + backlight PWM</small></span></button>
+          <button class="image-card lightbox-trigger" data-src="assets/images/kicad-controls-encoder.png" data-caption="Rotary encoder control circuit"><img src="assets/images/kicad-controls-encoder.png" alt="KiCad rotary encoder control schematic"><span class="image-caption"><strong>Controls</strong><small>Rotary encoder</small></span></button>
+          <button class="image-card lightbox-trigger" data-src="assets/images/kicad-shutter.png" data-caption="Shutter button input"><img src="assets/images/kicad-shutter.png" alt="KiCad shutter push button schematic"><span class="image-caption"><strong>Shutter</strong><small>Digital input</small></span></button>
+          <button class="image-card lightbox-trigger" data-src="assets/images/kicad-flash.png" data-caption="MOSFET-driven LED flash circuit"><img src="assets/images/kicad-flash.png" alt="KiCad MOSFET LED flash driver schematic"><span class="image-caption"><strong>Flash driver</strong><small>MOSFET switched</small></span></button>
+        </div>
+
+        <div class="technical-note">
+          <span class="note-number">A</span>
+          <div><strong>System architecture</strong><p>The ESP32-S3 handles the display SPI signals, encoder inputs, shutter input, backlight control, and flash gate. The schematic set also reserves the built-in microSD connection on the XIAO ESP32-S3 Sense.</p></div>
+        </div>
+      </div>
+    </section>
+
+    <section id="mechanical" class="section">
+      <div class="section-label"><span>03</span><p>Mechanical Design</p></div>
+      <div class="section-body">
+        <div class="section-heading">
+          <div><p class="kicker">ONSHAPE</p><h2>Designed around the electronics.</h2></div>
+          <p>The enclosure and control components were modeled to package the display, camera, controls, and internal wiring into a handheld form that could be fabricated on an FDM printer.</p>
+        </div>
+
+        <div class="cad-feature">
+          <button class="image-card lightbox-trigger" data-src="assets/images/onshape-camera-front.png" data-caption="DigiCam exterior model in Onshape"><img src="assets/images/onshape-camera-front.png" alt="Onshape CAD model of DigiCam exterior"></button>
+          <div class="cad-copy"><p class="kicker">ENCLOSURE</p><h3>Custom camera body</h3><p>The body includes a lens opening, front flash opening, curved grip geometry, control placement, and internal space for the electronics.</p></div>
+        </div>
+
+        <div class="cad-grid">
+          <button class="image-card lightbox-trigger" data-src="assets/images/onshape-camera-internal.png" data-caption="Internal enclosure and mounting features"><img src="assets/images/onshape-camera-internal.png" alt="Onshape view of internal DigiCam enclosure"><span class="image-caption"><strong>Internal geometry</strong><small>Packaging + mounting</small></span></button>
+          <button class="image-card lightbox-trigger" data-src="assets/images/onshape-enclosure-top.png" data-caption="Enclosure shell and openings"><img src="assets/images/onshape-enclosure-top.png" alt="Onshape enclosure shell"><span class="image-caption"><strong>Enclosure shell</strong><small>Display + control openings</small></span></button>
+          <button class="image-card lightbox-trigger" data-src="assets/images/onshape-enclosure-interior.png" data-caption="Interior enclosure features"><img src="assets/images/onshape-enclosure-interior.png" alt="Onshape interior enclosure features"><span class="image-caption"><strong>Interior features</strong><small>Component clearances</small></span></button>
+          <button class="image-card lightbox-trigger" data-src="assets/images/onshape-knob-top.png" data-caption="Custom rotary encoder knob"><img src="assets/images/onshape-knob-top.png" alt="Onshape custom rotary encoder knob"><span class="image-caption"><strong>Encoder knob</strong><small>Custom printable control</small></span></button>
+        </div>
+      </div>
+    </section>
+
+    <section id="build" class="section section-dark">
+      <div class="section-label"><span>04</span><p>Build &amp; Integration</p></div>
+      <div class="section-body">
+        <div class="section-heading">
+          <div><p class="kicker">PROTOTYPING</p><h2>Turning CAD and schematics into a working object.</h2></div>
+          <p>The hardware was assembled on perfboard and integrated into the printed enclosure. The build phase exposed the practical problems that don't appear in a schematic: wiring, clearances, connector placement, control fit, and debugging under real constraints.</p>
+        </div>
+
+        <div class="build-mosaic">
+          <button class="image-card tall lightbox-trigger" data-src="assets/images/digicam-assembly-internals.jpg" data-caption="DigiCam during hardware integration"><img src="assets/images/digicam-assembly-internals.jpg" alt="DigiCam internal wiring and display during assembly"><span class="image-caption"><strong>Hardware integration</strong><small>Perfboard, battery, display, controls</small></span></button>
+          <button class="image-card lightbox-trigger" data-src="assets/images/digicam-livefeed-angle.jpg" data-caption="Assembled DigiCam with live feed running"><img src="assets/images/digicam-livefeed-angle.jpg" alt="DigiCam assembled with a live camera feed on display"><span class="image-caption"><strong>Live preview</strong><small>Working display pipeline</small></span></button>
+          <button class="image-card lightbox-trigger" data-src="assets/images/digicam-front-side.jpg" data-caption="Front and side view of the finished enclosure"><img src="assets/images/digicam-front-side.jpg" alt="Front and side view of DigiCam enclosure"><span class="image-caption"><strong>Finished enclosure</strong><small>3D-printed body + grip</small></span></button>
+          <button class="image-card wide lightbox-trigger" data-src="assets/images/digicam-final-rear-livefeed.jpg" data-caption="Finished DigiCam prototype"><img src="assets/images/digicam-final-rear-livefeed.jpg" alt="Finished DigiCam with display, rotary control, and live feed"><span class="image-caption"><strong>Functional prototype</strong><small>Live camera feed at the rear display</small></span></button>
+        </div>
+      </div>
+    </section>
+
+    <section id="output" class="section">
+      <div class="section-label"><span>05</span><p>Camera Output</p></div>
+      <div class="section-body">
+        <div class="section-heading">
+          <div><p class="kicker">CAPTURED ON DIGICAM</p><h2>The prototype takes real photos.</h2></div>
+          <p>These are example images captured with the ESP32-S3 camera during testing. Image quality is part of the prototype's character—and a clear area for future refinement.</p>
+        </div>
+
+        <div class="output-grid">
+          <button class="output-card lightbox-trigger" data-src="assets/images/camera-output-portrait.jpg" data-caption="Sample portrait captured on DigiCam"><img src="assets/images/camera-output-portrait.jpg" alt="Sample portrait captured using DigiCam"><span>Portrait test</span></button>
+          <button class="output-card lightbox-trigger" data-src="assets/images/camera-output-street.jpg" data-caption="Outdoor street sample captured on DigiCam"><img src="assets/images/camera-output-street.jpg" alt="Outdoor street photo captured using DigiCam"><span>Outdoor test</span></button>
+          <button class="output-card lightbox-trigger" data-src="assets/images/camera-output-soccer.jpg" data-caption="Soccer ball sample captured on DigiCam"><img src="assets/images/camera-output-soccer.jpg" alt="Soccer ball photo captured using DigiCam"><span>Focus / exposure test</span></button>
+        </div>
+
+        <div class="next-iteration">
+          <p class="kicker">NEXT ITERATION</p>
+          <h3>What I would improve in V2</h3>
+          <div class="next-grid">
+            <div><span>01</span><p>Replace prototype wiring with a cleaner custom PCB.</p></div>
+            <div><span>02</span><p>Refine the enclosure to reduce size and simplify assembly.</p></div>
+            <div><span>03</span><p>Improve image quality, camera settings, and the user interface.</p></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="about" class="section about-section section-dark">
+      <div class="section-label"><span>06</span><p>About</p></div>
+      <div class="section-body about-grid">
+        <div><p class="kicker">JACKSON HOLSTER</p><h2>Electrical Engineering student who likes building the whole system.</h2></div>
+        <div class="about-copy">
+          <p>I'm pursuing a B.S. in Electrical Engineering at California State University, Long Beach. My interests are centered around embedded systems, electronics, circuit and PCB design, and hands-on prototyping.</p>
+          <p>I like projects that force electrical, software, and mechanical decisions to meet in one place. DigiCam is the first project documented here, and this portfolio will continue to grow as I build more.</p>
+          <div class="skill-chips"><span>C++</span><span>MATLAB</span><span>ESP32</span><span>Arduino</span><span>KiCad</span><span>Altium Designer</span><span>Onshape</span><span>3D Printing</span><span>Soldering</span><span>Digital Logic</span></div>
+          <div class="contact-links">
+            <a href="mailto:jacksonholster1@gmail.com">Email ↗</a>
+            <a href="https://www.linkedin.com/in/jackson-holster2026" target="_blank" rel="noopener">LinkedIn ↗</a>
+            <a href="https://github.com/jacksonholster" target="_blank" rel="noopener">GitHub ↗</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>Jackson Holster • Electrical Engineering Portfolio</p>
+    <p>jacksonholster.github.io/engineering-portfolio</p>
+  </footer>
+
+  <dialog class="lightbox" id="lightbox">
+    <button class="lightbox-close" aria-label="Close image">×</button>
+    <img id="lightbox-image" alt="">
+    <p id="lightbox-caption"></p>
+  </dialog>
+
+  <script src="script.js"></script>
+</body>
+</html>
