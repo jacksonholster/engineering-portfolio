@@ -6,21 +6,263 @@
 <meta name="description" content="Jackson Holster — Electrical Engineering portfolio focused on embedded systems, electronics, PCB design, and prototyping.">
 <title>Jackson Holster | Electrical Engineering Portfolio</title>
 <style>
-:root{--bg:#071019;--panel:#0d1822;--panel2:#101d28;--text:#e8eef2;--muted:#91a0aa;--line:rgba(255,255,255,.09);--teal:#49e2c2;--teal2:#1fb99c;--blue:#4aa3ff;--max:1120px}*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--bg);color:var(--text);font-family:Inter,ui-sans-serif,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;line-height:1.6}body:before{content:"";position:fixed;inset:0;pointer-events:none;background-image:radial-gradient(circle at 1px 1px,rgba(73,226,194,.13) 1px,transparent 0);background-size:34px 34px;opacity:.5;mask-image:linear-gradient(to bottom,black,transparent 42%)}a{color:inherit;text-decoration:none}img{display:block;width:100%}button{font:inherit}.container{width:min(calc(100% - 40px),var(--max));margin:auto}.nav{position:fixed;top:0;left:0;right:0;z-index:50;border-bottom:1px solid var(--line);background:rgba(7,16,25,.82);backdrop-filter:blur(14px)}.nav-inner{height:72px;display:flex;align-items:center;justify-content:space-between}.brand{font-weight:800;letter-spacing:-.02em}.brand span{color:var(--teal)}.nav-links{display:flex;align-items:center;gap:22px;color:#c2ccd2;font-size:.86rem}.nav-links a:hover{color:var(--teal)}.hero{min-height:100vh;padding:120px 0 80px;display:flex;align-items:center;text-align:center;position:relative;overflow:hidden}.hero:after{content:"";position:absolute;width:520px;height:520px;border-radius:50%;background:rgba(73,226,194,.09);filter:blur(80px);top:18%;left:-200px}.hero:before{content:"";position:absolute;width:470px;height:470px;border-radius:50%;background:rgba(74,163,255,.08);filter:blur(90px);right:-180px;bottom:10%}.hero-inner{position:relative;z-index:1;max-width:850px;margin:auto}.hero-badge{display:inline-flex;align-items:center;gap:9px;font:600 .78rem ui-monospace,SFMono-Regular,Menlo,monospace;color:var(--teal);letter-spacing:.04em;margin-bottom:20px}.dot{width:8px;height:8px;border-radius:50%;background:var(--teal);box-shadow:0 0 18px var(--teal)}.hero h1{font-size:clamp(3.5rem,8vw,7.2rem);line-height:.94;letter-spacing:-.06em;margin:0 0 22px}.hero p{max-width:700px;margin:0 auto;color:var(--muted);font-size:1.08rem}.actions{display:flex;justify-content:center;gap:12px;flex-wrap:wrap;margin-top:32px}.btn{padding:12px 20px;border-radius:999px;border:1px solid var(--line);font-weight:700;font-size:.9rem;transition:.2s}.btn.primary{background:var(--teal);color:#04110d;border-color:var(--teal);box-shadow:0 0 28px rgba(73,226,194,.16)}.btn:hover{transform:translateY(-2px);border-color:rgba(73,226,194,.45)}.section{padding:96px 0;scroll-margin-top:72px}.alt{background:rgba(255,255,255,.018)}.eyebrow{font:700 .74rem ui-monospace,SFMono-Regular,Menlo,monospace;color:var(--teal);letter-spacing:.14em;text-transform:uppercase;margin:0 0 10px}.section h2{font-size:clamp(2rem,4vw,3rem);letter-spacing:-.04em;margin:0 0 34px}.card{background:linear-gradient(145deg,rgba(255,255,255,.035),rgba(255,255,255,.018));border:1px solid var(--line);border-radius:20px}.about-card{padding:30px;display:grid;grid-template-columns:1.2fr .8fr;gap:34px}.about-card p{color:#bcc7cd;margin:0 0 16px}.quickfacts{display:grid;gap:10px}.quickfacts div{padding:14px 16px;border-radius:12px;background:rgba(255,255,255,.025);border:1px solid var(--line)}.quickfacts small{display:block;color:var(--teal);font:700 .68rem ui-monospace,SFMono-Regular,Menlo,monospace;text-transform:uppercase;letter-spacing:.08em;margin-bottom:3px}.timeline{position:relative;margin-left:10px;padding-left:28px;border-left:1px solid var(--line)}.job{position:relative;margin:0 0 42px}.job:last-child{margin-bottom:0}.job:before{content:"";position:absolute;width:12px;height:12px;border-radius:50%;background:var(--bg);border:2px solid var(--teal);left:-35px;top:7px}.job-top{display:flex;justify-content:space-between;gap:18px;align-items:flex-start}.job h3{margin:0;font-size:1.15rem}.job .date{font:600 .72rem ui-monospace,SFMono-Regular,Menlo,monospace;color:var(--teal);white-space:nowrap}.job .org{color:#73838e;margin:4px 0 10px;font-size:.9rem}.job p{color:#aab7bf;margin:0;font-size:.94rem}.skills-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}.skill{padding:24px}.skill-icon{width:38px;height:38px;border-radius:11px;display:grid;place-items:center;background:rgba(73,226,194,.1);color:var(--teal);margin-bottom:15px;font-weight:800}.skill h3{font-size:1rem;margin:0 0 12px}.skill ul{list-style:none;padding:0;margin:0;color:#9eabb3;font-size:.9rem}.skill li{margin:6px 0}.projects{display:grid;grid-template-columns:1fr 1fr;gap:20px}.project-card{overflow:hidden;display:flex;flex-direction:column}.project-img{aspect-ratio:16/9;background:#111b24;overflow:hidden;cursor:zoom-in;border-bottom:1px solid var(--line)}.project-img img{height:100%;object-fit:cover;transition:.3s}.project-img.contain img{object-fit:contain;background:#f7f7f5}.project-card:hover .project-img img{transform:scale(1.02)}.project-body{padding:24px;display:flex;flex-direction:column;height:100%}.badge{font:700 .68rem ui-monospace,SFMono-Regular,Menlo,monospace;color:var(--teal);letter-spacing:.08em;text-transform:uppercase;margin-bottom:8px}.project-card h3{font-size:1.35rem;margin:0 0 8px}.project-sub{color:#73838e;font-size:.84rem;margin:0 0 14px}.project-body>p{color:#aab7bf;font-size:.92rem}.bullets{padding-left:18px;color:#aab7bf;font-size:.88rem;margin:4px 0 18px}.bullets li{margin:7px 0}.tags{display:flex;flex-wrap:wrap;gap:7px;margin-top:auto}.tags span{font:600 .7rem ui-monospace,SFMono-Regular,Menlo,monospace;padding:5px 8px;border-radius:999px;color:var(--teal);background:rgba(73,226,194,.08);border:1px solid rgba(73,226,194,.16)}.detail-grid{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-top:20px}.detail{padding:20px}.detail h4{margin:0 0 9px;color:white}.detail p{margin:0;color:#9eabb3;font-size:.89rem}.contact-box{text-align:center;padding:42px 24px}.contact-box p{color:var(--muted);max-width:620px;margin:0 auto 24px}.contact-links{display:flex;justify-content:center;gap:12px;flex-wrap:wrap}footer{padding:30px 0 46px;color:#6f7f89;font-size:.78rem;text-align:center}dialog{width:min(94vw,1450px);border:1px solid var(--line);border-radius:18px;background:#050b10;padding:16px}dialog::backdrop{background:rgba(0,0,0,.88)}dialog img{max-height:88vh;object-fit:contain}.close{position:absolute;right:22px;top:22px;width:38px;height:38px;border:0;border-radius:50%;background:#08121ddd;color:white;font-size:1.5rem;cursor:pointer}@media(max-width:850px){.nav-links{display:none}.about-card,.projects,.skills-grid,.detail-grid{grid-template-columns:1fr}.hero h1{font-size:clamp(3rem,15vw,5.2rem)}.job-top{flex-direction:column;gap:3px}}@media(max-width:520px){.container{width:min(calc(100% - 28px),var(--max))}.hero{padding-top:105px}.section{padding:76px 0}.about-card{padding:22px}.project-body{padding:20px}}
+:root{
+  --bg:#071019;--panel:#0d1822;--panel2:#101d28;--text:#e8eef2;--muted:#91a0aa;
+  --line:rgba(255,255,255,.09);--teal:#49e2c2;--teal2:#1fb99c;--blue:#4aa3ff;--max:1120px
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--bg);color:var(--text);font-family:Inter,ui-sans-serif,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;line-height:1.6}
+body:before{content:"";position:fixed;inset:0;pointer-events:none;background-image:radial-gradient(circle at 1px 1px,rgba(73,226,194,.13) 1px,transparent 0);background-size:34px 34px;opacity:.5;mask-image:linear-gradient(to bottom,black,transparent 42%)}
+a{color:inherit;text-decoration:none}
+img{display:block;width:100%}
+button{font:inherit}
+.container{width:min(calc(100% - 40px),var(--max));margin:auto}
+.nav{position:fixed;top:0;left:0;right:0;z-index:50;border-bottom:1px solid var(--line);background:rgba(7,16,25,.82);backdrop-filter:blur(14px)}
+.nav-inner{height:72px;display:flex;align-items:center;justify-content:space-between}
+.brand{font-weight:800;letter-spacing:-.02em}.brand span{color:var(--teal)}
+.nav-links{display:flex;align-items:center;gap:22px;color:#c2ccd2;font-size:.86rem}
+.nav-links a:hover{color:var(--teal)}
+.hero{min-height:100vh;padding:120px 0 80px;display:flex;align-items:center;text-align:center;position:relative;overflow:hidden}
+.hero:after{content:"";position:absolute;width:520px;height:520px;border-radius:50%;background:rgba(73,226,194,.09);filter:blur(80px);top:18%;left:-200px}
+.hero:before{content:"";position:absolute;width:470px;height:470px;border-radius:50%;background:rgba(74,163,255,.08);filter:blur(90px);right:-180px;bottom:10%}
+.hero-inner{position:relative;z-index:1;max-width:850px;margin:auto}
+.hero-badge{display:inline-flex;align-items:center;gap:9px;font:600 .78rem ui-monospace,SFMono-Regular,Menlo,monospace;color:var(--teal);letter-spacing:.04em;margin-bottom:20px}
+.dot{width:8px;height:8px;border-radius:50%;background:var(--teal);box-shadow:0 0 18px var(--teal)}
+.hero h1{font-size:clamp(3.5rem,8vw,7.2rem);line-height:.94;letter-spacing:-.06em;margin:0 0 22px}
+.hero p{max-width:700px;margin:0 auto;color:var(--muted);font-size:1.08rem}
+.actions{display:flex;justify-content:center;gap:12px;flex-wrap:wrap;margin-top:32px}
+.btn{padding:12px 20px;border-radius:999px;border:1px solid var(--line);font-weight:700;font-size:.9rem;transition:.2s}
+.btn.primary{background:var(--teal);color:#04110d;border-color:var(--teal);box-shadow:0 0 28px rgba(73,226,194,.16)}
+.btn:hover{transform:translateY(-2px);border-color:rgba(73,226,194,.45)}
+.section{padding:96px 0;scroll-margin-top:72px}
+.alt{background:rgba(255,255,255,.018)}
+.eyebrow{font:700 .74rem ui-monospace,SFMono-Regular,Menlo,monospace;color:var(--teal);letter-spacing:.14em;text-transform:uppercase;margin:0 0 10px}
+.section h2{font-size:clamp(2rem,4vw,3rem);letter-spacing:-.04em;margin:0 0 34px}
+.card{background:linear-gradient(145deg,rgba(255,255,255,.035),rgba(255,255,255,.018));border:1px solid var(--line);border-radius:20px}
+.about-card{padding:30px;display:grid;grid-template-columns:1.2fr .8fr;gap:34px}
+.about-card p{color:#bcc7cd;margin:0 0 16px}
+.quickfacts{display:grid;gap:10px}
+.quickfacts div{padding:14px 16px;border-radius:12px;background:rgba(255,255,255,.025);border:1px solid var(--line)}
+.quickfacts small{display:block;color:var(--teal);font:700 .68rem ui-monospace,SFMono-Regular,Menlo,monospace;text-transform:uppercase;letter-spacing:.08em;margin-bottom:3px}
+.timeline{position:relative;margin-left:10px;padding-left:28px;border-left:1px solid var(--line)}
+.job{position:relative;margin:0 0 42px}
+.job:last-child{margin-bottom:0}
+.job:before{content:"";position:absolute;width:12px;height:12px;border-radius:50%;background:var(--bg);border:2px solid var(--teal);left:-35px;top:7px}
+.job-top{display:flex;justify-content:space-between;gap:18px;align-items:flex-start}
+.job h3{margin:0;font-size:1.15rem}
+.job .date{font:600 .72rem ui-monospace,SFMono-Regular,Menlo,monospace;color:var(--teal);white-space:nowrap}
+.job .org{color:#73838e;margin:4px 0 10px;font-size:.9rem}
+.job p{color:#aab7bf;margin:0;font-size:.94rem}
+.skills-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+.skill{padding:24px}
+.skill-icon{width:38px;height:38px;border-radius:11px;display:grid;place-items:center;background:rgba(73,226,194,.1);color:var(--teal);margin-bottom:15px;font-weight:800}
+.skill h3{font-size:1rem;margin:0 0 12px}
+.skill ul{list-style:none;padding:0;margin:0;color:#9eabb3;font-size:.9rem}
+.skill li{margin:6px 0}
+.projects{display:grid;gap:28px}
+.project-feature{overflow:hidden}
+.project-feature-grid{display:grid;grid-template-columns:1.05fr .95fr;min-height:430px}
+.project-gallery{display:grid;grid-template-columns:1.45fr .85fr;grid-template-rows:1fr 1fr;gap:1px;background:var(--line);border-right:1px solid var(--line)}
+.project-shot{margin:0;background:#101a23;overflow:hidden;cursor:zoom-in;position:relative}
+.project-shot.main{grid-row:1/3}
+.project-shot img{height:100%;object-fit:cover;transition:.3s}
+.project-shot.contain img{object-fit:contain;background:#f4f5f3}
+.project-shot:hover img{transform:scale(1.018)}
+.project-copy{padding:32px;display:flex;flex-direction:column}
+.badge{font:700 .68rem ui-monospace,SFMono-Regular,Menlo,monospace;color:var(--teal);letter-spacing:.08em;text-transform:uppercase;margin-bottom:9px}
+.project-copy h3{font-size:1.55rem;margin:0 0 8px}
+.project-sub{color:#73838e;font-size:.84rem;margin:0 0 16px}
+.project-copy>p{color:#aab7bf;font-size:.93rem}
+.bullets{padding-left:18px;color:#aab7bf;font-size:.89rem;margin:4px 0 20px}
+.bullets li{margin:7px 0}
+.tags{display:flex;flex-wrap:wrap;gap:7px;margin-top:auto}
+.tags span{font:600 .7rem ui-monospace,SFMono-Regular,Menlo,monospace;padding:5px 8px;border-radius:999px;color:var(--teal);background:rgba(73,226,194,.08);border:1px solid rgba(73,226,194,.16)}
+.project-placeholder{min-height:430px;display:grid;place-items:center;padding:34px;border-right:1px solid var(--line);background:linear-gradient(145deg,rgba(73,226,194,.07),rgba(74,163,255,.035))}
+.project-placeholder-inner{max-width:320px;text-align:center}
+.project-placeholder .circuit{width:72px;height:72px;margin:0 auto 18px;border:1px solid rgba(73,226,194,.35);border-radius:18px;display:grid;place-items:center;color:var(--teal);font:800 .85rem ui-monospace,SFMono-Regular,Menlo,monospace;box-shadow:0 0 28px rgba(73,226,194,.08)}
+.project-placeholder p{margin:0;color:#81909a;font-size:.86rem}
+.more-soon{margin-top:20px;color:#6f7f89;font-size:.82rem;text-align:center}
+.contact-box{text-align:center;padding:42px 24px}
+.contact-box p{color:var(--muted);max-width:620px;margin:0 auto 24px}
+.contact-links{display:flex;justify-content:center;gap:12px;flex-wrap:wrap}
+footer{padding:30px 0 46px;color:#6f7f89;font-size:.78rem;text-align:center}
+dialog{width:min(94vw,1450px);border:1px solid var(--line);border-radius:18px;background:#050b10;padding:16px}
+dialog::backdrop{background:rgba(0,0,0,.88)}
+dialog img{max-height:88vh;object-fit:contain}
+.close{position:absolute;right:22px;top:22px;width:38px;height:38px;border:0;border-radius:50%;background:#08121ddd;color:white;font-size:1.5rem;cursor:pointer}
+@media(max-width:850px){
+ .nav-links{display:none}.about-card,.skills-grid,.project-feature-grid{grid-template-columns:1fr}.project-gallery,.project-placeholder{border-right:0;border-bottom:1px solid var(--line)}
+ .hero h1{font-size:clamp(3rem,15vw,5.2rem)}.job-top{flex-direction:column;gap:3px}
+}
+@media(max-width:520px){.container{width:min(calc(100% - 28px),var(--max))}.hero{padding-top:105px}.section{padding:76px 0}.about-card{padding:22px}.project-body{padding:20px}}
 </style>
 </head>
 <body>
-<header class="nav"><div class="container nav-inner"><a class="brand" href="#hero">Jackson <span>Holster</span></a><nav class="nav-links"><a href="#about">About</a><a href="#experience">Experience</a><a href="#skills">Skills</a><a href="#projects">Projects</a><a href="#contact">Contact</a></nav></div></header>
+<header class="nav">
+  <div class="container nav-inner">
+    <a class="brand" href="#hero">Jackson <span>Holster</span></a>
+    <nav class="nav-links">
+      <a href="#about">About</a>
+      <a href="#experience">Experience</a>
+      <a href="#skills">Skills</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </div>
+</header>
+
 <main>
-<section class="hero" id="hero"><div class="container hero-inner"><div class="hero-badge"><span class="dot"></span> Electrical Engineering · CSULB</div><h1>Jackson Holster</h1><p>Electrical Engineering student focused on embedded systems, electronics, circuit and PCB design, and hands-on prototyping. I like building projects that connect hardware, firmware, and mechanical design.</p><div class="actions"><a class="btn primary" href="#projects">View My Work</a><a class="btn" href="mailto:jacksonholster1@gmail.com">Contact Me</a><a class="btn" href="https://github.com/jacksonholster" target="_blank" rel="noopener">GitHub ↗</a></div></div></section>
-<section class="section" id="about"><div class="container"><p class="eyebrow">01 / About</p><h2>About Me</h2><div class="card about-card"><div><p>I'm pursuing a B.S. in Electrical Engineering at California State University, Long Beach. My interests are centered around embedded systems, electronics, circuit design, PCB development, and engineering prototyping.</p><p>I enjoy taking a project from schematic and breadboard testing through CAD, fabrication, integration, and debugging. My current work includes an ESP32-S3 digital camera and an analog guitar distortion pedal.</p></div><div class="quickfacts"><div><small>University</small><strong>California State University, Long Beach</strong></div><div><small>Degree</small><strong>B.S. Electrical Engineering · Expected 2028</strong></div><div><small>Focus</small><strong>Embedded Systems · Electronics · PCB Design</strong></div></div></div></div></section>
-<section class="section alt" id="experience"><div class="container"><p class="eyebrow">02 / Experience</p><h2>Experience</h2><div class="timeline"><div class="job"><div class="job-top"><h3>Tractive Systems Member</h3><span class="date">Mar. 2026 — Jun. 2026</span></div><div class="org">Society of Automotive Engineers (SAE) — CSULB</div><p>Contributed to team engineering activities while building familiarity with KiCad, Altium Designer, Formula SAE electrical safety requirements, system architecture, and high-voltage design considerations.</p></div><div class="job"><div class="job-top"><h3>Professional Sandwich Artist</h3><span class="date">Dec. 2024 — Present</span></div><div class="org">Subway — Corona, CA</div><p>Work in a fast-paced customer service environment requiring accuracy, communication, teamwork, organization, and consistent execution during high-volume periods.</p></div><div class="job"><div class="job-top"><h3>Court Attendant &amp; Expeditor</h3><span class="date">Sep. 2023 — Dec. 2024</span></div><div class="org">Big Air Trampoline Park — Corona, CA</div><p>Monitored guest safety, enforced operating guidelines, communicated with team members, and prepared and expedited food orders during busy shifts.</p></div></div></div></section>
-<section class="section" id="skills"><div class="container"><p class="eyebrow">03 / Skills</p><h2>Technical Skills</h2><div class="skills-grid"><div class="card skill"><div class="skill-icon">µC</div><h3>Hardware &amp; Embedded</h3><ul><li>ESP32 · Arduino</li><li>Breadboarding · Soldering</li><li>SPI Interfacing</li><li>Digital Logic</li></ul></div><div class="card skill"><div class="skill-icon">PCB</div><h3>Electrical Design</h3><ul><li>KiCad · Altium Designer</li><li>Schematic Capture</li><li>Component Selection</li><li>PCB Design Fundamentals</li></ul></div><div class="card skill"><div class="skill-icon">CAD</div><h3>CAD &amp; Prototyping</h3><ul><li>Onshape</li><li>3D Printing</li><li>Bambu Studio</li><li>Mechanical Enclosure Design</li></ul></div><div class="card skill"><div class="skill-icon">&lt;/&gt;</div><h3>Programming</h3><ul><li>C++</li><li>Python</li><li>MATLAB</li><li>Embedded programming fundamentals</li></ul></div><div class="card skill"><div class="skill-icon">LAB</div><h3>Engineering Tools</h3><ul><li>VS Code</li><li>Multimeters</li><li>Oscilloscope fundamentals</li><li>Electrical troubleshooting</li></ul></div><div class="card skill"><div class="skill-icon">EE</div><h3>Concepts</h3><ul><li>Circuit Design &amp; Analysis</li><li>Embedded Systems</li><li>Digital Logic Design</li><li>Electronics Prototyping</li></ul></div></div></div></section>
-<section class="section alt" id="projects"><div class="container"><p class="eyebrow">04 / Projects</p><h2>Projects</h2><div class="projects"><article class="card project-card"><div class="project-img zoom"><img src="assets/images/digicam-final-rear-livefeed.webp" alt="DigiCam ESP32-S3 digital camera prototype"></div><div class="project-body"><div class="badge">Featured · Aug. 2026</div><h3>DigiCam — ESP32 Digital Camera</h3><p class="project-sub">ESP32-S3 · KiCad · Onshape · C/C++ · 3D Printing</p><p>Designed and built a custom handheld digital camera around the Seeed Studio XIAO ESP32-S3 Sense with a live TFT preview, physical controls, battery power, flash circuitry, and a custom enclosure.</p><ul class="bullets"><li>Created multi-sheet electrical schematics for power, display, controls, MCU pin mapping, and MOSFET-driven flash circuitry.</li><li>Designed the enclosure and custom control components in Onshape and fabricated them with FDM 3D printing.</li><li>Integrated and debugged the electronics until live preview and image capture worked on the final prototype.</li></ul><div class="tags"><span>ESP32-S3</span><span>KiCad</span><span>SPI</span><span>Onshape</span><span>3D Printing</span></div></div></article><article class="card project-card"><div class="project-img contain zoom"><img src="assets/images/kicad-full-schematic.webp" alt="DigiCam full KiCad schematic"></div><div class="project-body"><div class="badge">Electrical Design</div><h3>DigiCam System Design</h3><p class="project-sub">Power · Display · Controls · Flash</p><p>The camera was divided into electrical subsystems to make integration and troubleshooting easier, with the ESP32-S3 coordinating the display, controls, flash, and camera system.</p><div class="tags"><span>Schematic Capture</span><span>MOSFET</span><span>Digital I/O</span><span>SPI</span></div></div></article><article class="card project-card"><div class="project-img contain zoom"><img src="assets/images/onshape-camera-front.webp" alt="Onshape CAD model of DigiCam enclosure"></div><div class="project-body"><div class="badge">Mechanical Design</div><h3>DigiCam Enclosure</h3><p class="project-sub">Onshape · FDM Prototyping</p><p>Modeled a custom camera body around the electronics, display, controls, wiring, lens opening, and grip geometry, then iterated the design through 3D-printed prototypes.</p><div class="tags"><span>Onshape</span><span>CAD</span><span>FDM</span><span>Rapid Prototyping</span></div></div></article><article class="card project-card"><div class="project-img zoom"><img src="assets/images/digicam-assembly-internals.webp" alt="DigiCam internal hardware during assembly"></div><div class="project-body"><div class="badge">Current · Sep. 2026</div><h3>Guitar Distortion Pedal</h3><p class="project-sub">Analog Electronics · OPA2134PA · PCB Design</p><p>Currently designing and prototyping an analog guitar distortion pedal with gain, diode clipping, tone and volume controls, a 9 V supply, and a custom PCB.</p><ul class="bullets"><li>Testing the signal path and reference-voltage network on a breadboard.</li><li>Using an OPA2134PA dual audio op-amp and diode clipping network for distortion.</li><li>Developing the PCB layout and preparing the design for fabrication.</li></ul><div class="tags"><span>Analog</span><span>OPA2134PA</span><span>KiCad</span><span>Breadboard</span><span>PCB</span></div></div></article></div><div class="detail-grid"><div class="card detail"><h4>Hardware integration</h4><p>DigiCam combines the ESP32-S3, TFT display, rotary encoder, shutter button, battery, flash driver, and perfboard wiring inside the custom printed enclosure.</p></div><div class="card detail"><h4>Camera output</h4><p>The final prototype produces a live preview and captures images. Image quality and packaging are two areas I would continue refining in a future revision.</p></div></div></div></section>
-<section class="section" id="contact"><div class="container"><p class="eyebrow">05 / Contact</p><div class="card contact-box"><h2>Let's connect.</h2><p>I'm interested in opportunities involving electrical engineering, embedded systems, hardware design, electronics, and undergraduate research.</p><div class="contact-links"><a class="btn primary" href="mailto:jacksonholster1@gmail.com">Email Me</a><a class="btn" href="https://www.linkedin.com/in/jackson-holster2026" target="_blank" rel="noopener">LinkedIn ↗</a><a class="btn" href="https://github.com/jacksonholster" target="_blank" rel="noopener">GitHub ↗</a></div></div></div></section>
+<section class="hero" id="hero">
+  <div class="container hero-inner">
+    <div class="hero-badge"><span class="dot"></span> Electrical Engineering · CSULB</div>
+    <h1>Jackson Holster</h1>
+    <p>Electrical Engineering student focused on embedded systems, electronics, circuit and PCB design, and hands-on prototyping. I like building projects that connect hardware, firmware, and mechanical design.</p>
+    <div class="actions">
+      <a class="btn primary" href="#projects">View My Work</a>
+      <a class="btn" href="mailto:jacksonholster1@gmail.com">Contact Me</a>
+      <a class="btn" href="https://github.com/jacksonholster" target="_blank" rel="noopener">GitHub ↗</a>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="about">
+  <div class="container">
+    <p class="eyebrow">01 / About</p>
+    <h2>About Me</h2>
+    <div class="card about-card">
+      <div>
+        <p>I'm pursuing a B.S. in Electrical Engineering at California State University, Long Beach. My interests are centered around embedded systems, electronics, circuit design, PCB development, and engineering prototyping.</p>
+        <p>I enjoy taking a project from schematic and breadboard testing through CAD, fabrication, integration, and debugging. My current work includes an ESP32-S3 digital camera and an analog guitar distortion pedal.</p>
+      </div>
+      <div class="quickfacts">
+        <div><small>University</small><strong>California State University, Long Beach</strong></div>
+        <div><small>Degree</small><strong>B.S. Electrical Engineering · Expected 2028</strong></div>
+        <div><small>Focus</small><strong>Embedded Systems · Electronics · PCB Design</strong></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section alt" id="experience">
+  <div class="container">
+    <p class="eyebrow">02 / Experience</p>
+    <h2>Experience</h2>
+    <div class="timeline">
+      <div class="job">
+        <div class="job-top"><h3>Tractive Systems Member</h3><span class="date">Mar. 2026 — Jun. 2026</span></div>
+        <div class="org">Society of Automotive Engineers (SAE) — CSULB</div>
+        <p>Contributed to team engineering activities while building familiarity with KiCad, Altium Designer, Formula SAE electrical safety requirements, system architecture, and high-voltage design considerations.</p>
+      </div>
+      <div class="job">
+        <div class="job-top"><h3>Professional Sandwich Artist</h3><span class="date">Dec. 2024 — Present</span></div>
+        <div class="org">Subway — Corona, CA</div>
+        <p>Work in a fast-paced customer service environment requiring accuracy, communication, teamwork, organization, and consistent execution during high-volume periods.</p>
+      </div>
+      <div class="job">
+        <div class="job-top"><h3>Court Attendant &amp; Expeditor</h3><span class="date">Sep. 2023 — Dec. 2024</span></div>
+        <div class="org">Big Air Trampoline Park — Corona, CA</div>
+        <p>Monitored guest safety, enforced operating guidelines, communicated with team members, and prepared and expedited food orders during busy shifts.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="skills">
+  <div class="container">
+    <p class="eyebrow">03 / Skills</p>
+    <h2>Technical Skills</h2>
+    <div class="skills-grid">
+      <div class="card skill"><div class="skill-icon">µC</div><h3>Hardware &amp; Embedded</h3><ul><li>ESP32 · Arduino</li><li>Breadboarding · Soldering</li><li>SPI Interfacing</li><li>Digital Logic</li></ul></div>
+      <div class="card skill"><div class="skill-icon">PCB</div><h3>Electrical Design</h3><ul><li>KiCad · Altium Designer</li><li>Schematic Capture</li><li>Component Selection</li><li>PCB Design Fundamentals</li></ul></div>
+      <div class="card skill"><div class="skill-icon">CAD</div><h3>CAD &amp; Prototyping</h3><ul><li>Onshape</li><li>3D Printing</li><li>Bambu Studio</li><li>Mechanical Enclosure Design</li></ul></div>
+      <div class="card skill"><div class="skill-icon">&lt;/&gt;</div><h3>Programming</h3><ul><li>C++</li><li>Python</li><li>MATLAB</li><li>Embedded programming fundamentals</li></ul></div>
+      <div class="card skill"><div class="skill-icon">LAB</div><h3>Engineering Tools</h3><ul><li>VS Code</li><li>Multimeters</li><li>Oscilloscope fundamentals</li><li>Electrical troubleshooting</li></ul></div>
+      <div class="card skill"><div class="skill-icon">EE</div><h3>Concepts</h3><ul><li>Circuit Design &amp; Analysis</li><li>Embedded Systems</li><li>Digital Logic Design</li><li>Electronics Prototyping</li></ul></div>
+    </div>
+  </div>
+</section>
+
+<section class="section alt" id="projects">
+  <div class="container">
+    <p class="eyebrow">04 / Projects</p>
+    <h2>Projects</h2>
+    <div class="projects">
+
+      <article class="card project-feature">
+        <div class="project-feature-grid">
+          <div class="project-gallery">
+            <figure class="project-shot main zoom"><img src="assets/images/digicam-final-rear-livefeed.webp" alt="Finished DigiCam ESP32-S3 digital camera prototype"></figure>
+            <figure class="project-shot zoom"><img src="assets/images/digicam-assembly-internals.webp" alt="DigiCam internal hardware during assembly"></figure>
+            <figure class="project-shot contain zoom"><img src="assets/images/kicad-full-schematic.webp" alt="DigiCam full KiCad schematic"></figure>
+          </div>
+          <div class="project-copy">
+            <div class="badge">Completed · Aug. 2026</div>
+            <h3>DigiCam — ESP32 Digital Camera</h3>
+            <p class="project-sub">ESP32-S3 · KiCad · Onshape · C/C++ · 3D Printing</p>
+            <p>Designed and built a custom handheld digital camera around the Seeed Studio XIAO ESP32-S3 Sense. The project combines embedded programming, electrical design, a live TFT display, physical controls, battery power, flash circuitry, and a custom 3D-printed enclosure.</p>
+            <ul class="bullets">
+              <li>Created multi-sheet schematics for power, display, controls, MCU pin mapping, and MOSFET-driven flash circuitry.</li>
+              <li>Modeled the camera enclosure and custom control components in Onshape and fabricated them with FDM 3D printing.</li>
+              <li>Integrated and debugged the hardware until live preview and image capture worked on the finished prototype.</li>
+            </ul>
+            <div class="tags"><span>ESP32-S3</span><span>KiCad</span><span>SPI</span><span>Onshape</span><span>3D Printing</span></div>
+          </div>
+        </div>
+      </article>
+
+      <article class="card project-feature">
+        <div class="project-feature-grid">
+          <div class="project-placeholder">
+            <div class="project-placeholder-inner">
+              <div class="circuit">IN<br>PROG</div>
+              <p>Project photos, schematic screenshots, and PCB renders will be added here as the design develops.</p>
+            </div>
+          </div>
+          <div class="project-copy">
+            <div class="badge">In Progress · Sep. 2026</div>
+            <h3>Guitar Distortion Pedal</h3>
+            <p class="project-sub">Analog Electronics · OPA2134PA · KiCad · PCB Design</p>
+            <p>Currently designing and prototyping an analog guitar distortion pedal with adjustable gain, diode clipping, tone and volume controls, 9 V power, and a custom PCB.</p>
+            <ul class="bullets">
+              <li>Built and tested the signal path and reference-voltage network on a breadboard.</li>
+              <li>Using an OPA2134PA dual audio op-amp with diode clipping to shape the distortion response.</li>
+              <li>Developing the PCB layout and refining the circuit before fabrication and enclosure integration.</li>
+            </ul>
+            <div class="tags"><span>Analog</span><span>OPA2134PA</span><span>KiCad</span><span>Breadboard</span><span>PCB</span></div>
+          </div>
+        </div>
+      </article>
+
+    </div>
+    <p class="more-soon">More projects will be added here as I build and finish them.</p>
+  </div>
+</section>
+
+<section class="section" id="contact">
+  <div class="container">
+    <p class="eyebrow">05 / Contact</p>
+    <div class="card contact-box">
+      <h2>Let's connect.</h2>
+      <p>I'm interested in opportunities involving electrical engineering, embedded systems, hardware design, electronics, and undergraduate research.</p>
+      <div class="contact-links">
+        <a class="btn primary" href="mailto:jacksonholster1@gmail.com">Email Me</a>
+        <a class="btn" href="https://www.linkedin.com/in/jackson-holster2026" target="_blank" rel="noopener">LinkedIn ↗</a>
+        <a class="btn" href="https://github.com/jacksonholster" target="_blank" rel="noopener">GitHub ↗</a>
+      </div>
+    </div>
+  </div>
+</section>
 </main>
+
 <footer><div class="container">Jackson Holster · Electrical Engineering Portfolio · jacksonholster.github.io/engineering-portfolio</div></footer>
+
 <dialog id="lightbox"><button class="close" aria-label="Close">×</button><img alt="Expanded project image"></dialog>
-<script>const d=document.getElementById('lightbox'),im=d.querySelector('img');document.querySelectorAll('.zoom img').forEach(x=>x.parentElement.addEventListener('click',()=>{im.src=x.src;im.alt=x.alt;d.showModal()}));d.querySelector('.close').onclick=()=>d.close();d.addEventListener('click',e=>{if(e.target===d)d.close()});</script>
+<script>
+const d=document.getElementById('lightbox'), im=d.querySelector('img');
+document.querySelectorAll('.zoom img').forEach(x=>x.parentElement.addEventListener('click',()=>{im.src=x.src;im.alt=x.alt;d.showModal()}));
+d.querySelector('.close').onclick=()=>d.close();
+d.addEventListener('click',e=>{if(e.target===d)d.close()});
+</script>
 </body>
 </html>
